@@ -1,0 +1,1100 @@
+/*CSS. Allows us to make the game pretty and move around elements.*/
+#school {
+     height: 600px;
+     width: 1220px;
+     z-index: 1;
+     position: fixed;
+     top: 0;
+     left: 0;
+     border: 9px solid #ff76ff;
+     border-radius: 7px 
+}
+ #black {
+     z-index: 650;
+     position: fixed;
+     top: 0;
+     left: 0;
+}
+ #blank1 {
+     z-index: 201;
+     position: fixed;
+     top: 0;
+     left: 0;
+}
+ #blank2 {
+     z-index: 301;
+     position: fixed;
+     top: 0;
+     left: 0;
+}
+ #blank3 {
+     z-index: 401;
+     position: fixed;
+     top: 0;
+     left: 0;
+}
+ #blank4 {
+     z-index: 501;
+     position: fixed;
+     top: 0;
+     left: 0;
+}
+ #blank5 {
+     z-index: 601;
+     position: fixed;
+     top: 0;
+     left: 0;
+}
+ #blank6 {
+     z-index: 701;
+     position: fixed;
+     top: 0;
+     left: 0;
+}
+ #blank7 {
+     z-index: 801;
+     position: fixed;
+     top: 0;
+     left: 0;
+}
+ #gabbomain {
+     z-index: 80;
+     position: absolute;
+     top: 70px;
+     left: 120px;
+     width: 900;
+     height: 500;
+}
+ #blankMover1 {
+     z-index: 550;
+     position: fixed;
+     top: 0;
+     left: 0;
+}
+ #blankMover2 {
+     z-index: 550;
+     position: fixed;
+     top: 0;
+     left: 0;
+}
+ #blankMover3 {
+     z-index: 550;
+     position: fixed;
+     top: 0;
+     left: 0;
+}
+ #blankMover4 {
+     z-index: 90;
+     position: fixed;
+     top: 0;
+     left: 0;
+}
+ #blankMover6 {
+     z-index: 350;
+     position: fixed;
+     top: 0;
+     left: 0;
+}
+ #openMap {
+     border-radius: 6px;
+     border: 5px solid #ff76ff;
+     z-index: 30;
+     background-color: #ffc4ff;
+     position: absolute;
+     height: 30px;
+     width: 100px;
+     left: 13px;
+     top: 13px;
+     cursor: pointer;
+}
+ #schoolFlex {
+    /* Rounds corners */
+     border-radius: 500px;
+    /* Makes border. Solid makes it a solid line. */
+     border: 4px solid #95b0ba;
+    /* z-index is the layer. */
+     z-index: 30;
+     background-color: #b3dff0;
+    /* Basically the length and width of the circle. Like the radius. */
+     padding: 15px 15px;
+    /* Position relative to (0,0) on the page bc absolute. */
+     position: absolute;
+     height: 20px;
+     width: 20px;
+    /* Coordinates. In percents to accomodate for other resolutions. */
+     left: 443px;
+     top: 243px;
+    /* Makes finger cursor pop up */
+     cursor: pointer;
+}/*Activates when you hover over an element.*/
+ #schoolFlex:hover {
+    /* Has the shadow fade in. */
+     transition: 0.5s;
+    /* Drop shadow. The first 0 makes it fade in. The fourth value is the opacity out of 1. 0.23 is 23%. */
+     box-shadow: 0 9px 9px rgba(0,0,0,0.16);
+}
+ #schoolGrind {
+     border-radius: 500px;
+     border: 4px solid #95b0ba;
+     z-index: 30;
+     background-color: #b3dff0;
+     padding: 15px 15px;
+     position: absolute;
+     height: 20px;
+     width: 20px;
+     left: 745px;
+     top: 243px;
+     cursor: pointer;
+}
+ #schoolGrind:hover {
+     transition: 0.5s;
+     box-shadow: 0 9px 9px rgba(0,0,0,0.16);
+}
+ #mapSchool {
+     border-radius: 500px;
+     border: 4px solid #95b0ba;
+     z-index: 30;
+     background-color: #b3dff0;
+     padding: 15px 15px;
+     position: absolute;
+     height: 20px;
+     width: 20px;
+     left: 169px;
+     top: 516px;
+     cursor: pointer;
+}
+ #mapSchool:hover {
+     transition: 0.5s;
+     box-shadow: 0 9px 9px rgba(0,0,0,0.16);
+}
+ #mapWork {
+     border-radius: 500px;
+     border: 4px solid #95b0ba;
+     z-index: 30;
+     background-color: #b3dff0;
+     padding: 15px 15px;
+     position: absolute;
+     height: 20px;
+     width: 20px;
+     left: 730px;
+     top: 47px;
+     cursor: pointer;
+}
+ #mapWork:hover {
+     transition: 0.5s;
+     box-shadow: 0 9px 9px rgba(0,0,0,0.16);
+}
+ #mapHome {
+     border-radius: 500px;
+     border: 4px solid #95b0ba;
+     z-index: 30;
+     background-color: #b3dff0;
+     padding: 15px 15px;
+     position: absolute;
+     height: 20px;
+     width: 20px;
+     left: 70px;
+     top: 157px;
+     cursor: pointer;
+}
+ #mapHome:hover {
+     transition: 0.5s;
+     box-shadow: 0 9px 9px rgba(0,0,0,0.16);
+}
+ #mapStore {
+     border-radius: 500px;
+     border: 4px solid #95b0ba;
+     z-index: 30;
+     background-color: #b3dff0;
+     padding: 15px 15px;
+     position: absolute;
+     height: 20px;
+     width: 20px;
+     left: 250px;
+     top: 329px;
+     cursor: pointer;
+}
+ #mapStore:hover {
+     transition: 0.5s;
+     box-shadow: 0 9px 9px rgba(0,0,0,0.16);
+}
+ #openStore {
+     border-radius: 500px;
+     border: 4px solid #95b0ba;
+     z-index: 30;
+     background-color: #b3dff0;
+     padding: 15px 15px;
+     position: absolute;
+     height: 20px;
+     width: 20px;
+     left: 250px;
+     top: 329px;
+     cursor: pointer;
+}
+ #openStore:hover {
+     transition: 0.5s;
+     box-shadow: 0 9px 9px rgba(0,0,0,0.16);
+}
+ #work {
+     border-radius: 500px;
+     border: 4px solid #95b0ba;
+     z-index: 30;
+     background-color: #b3dff0;
+     padding: 15px 15px;
+     position: absolute;
+     height: 20px;
+     width: 20px;
+     left: 545px;
+     top: 488px;
+     cursor: pointer;
+}
+ #work{
+     transition: 0.5s;
+     box-shadow: 0 9px 9px rgba(0,0,0,0.16);
+}
+ #wildGabriel {
+     height: 500px;
+     width: 670px;
+     z-index: 2;
+     position: fixed;
+     top: 109;
+     left: 300;
+}
+ #wait {
+     border-radius: 500px;
+     border: 4px solid #95b0ba;
+     z-index: 30;
+     background-color: #b3dff0;
+     padding: 15px 15px;
+     position: absolute;
+     height: 20px;
+     width: 20px;
+     left: 400px;
+     top: 450px;
+     cursor: pointer;
+}
+ #mapPark {
+     border-radius: 500px;
+     border: 4px solid #95b0ba;
+     z-index: 30;
+     background-color: #b3dff0;
+     padding: 15px 15px;
+     position: absolute;
+     height: 20px;
+     width: 20px;
+     left: 450px;
+     top: 500px;
+     cursor: pointer;
+}
+ #mapPark {
+     transition: 0.5s;
+     box-shadow: 0 9px 9px rgba(0,0,0,0.16);
+}
+ #monsterRun {
+     border-radius: 6px;
+     border: 5px solid #ff76ff;
+     z-index: 30;
+     background-color: #ffc4ff;
+     position: absolute;
+     height: 30px;
+     width: 100px;
+     left: 1125px;
+     top: 460px;
+     cursor: pointer;
+}
+ #converse {
+     border-radius: 6px;
+     border: 5px solid #ff76ff;
+     z-index: 100;
+     background-color: #ffc4ff;
+     position: absolute;
+     height: 30px;
+     width: 100px;
+     left: 1125px;
+     top: 460px;
+     cursor: pointer;
+}
+ #leave {
+     border-radius: 6px;
+     border: 5px solid #ff76ff;
+     z-index: 100;
+     background-color: #ffc4ff;
+     position: absolute;
+     height: 30px;
+     width: 100px;
+     left: 1125px;
+     top: 395px;
+     cursor: pointer;
+}
+ #date {
+     border-radius: 6px;
+     border: 5px solid #ff76ff;
+     z-index: 100;
+     background-color: #ffc4ff;
+     position: absolute;
+     height: 30px;
+     width: 100px;
+     left: 1125px;
+     top: 427px;
+     cursor: pointer;
+}
+ #right1 {
+     border-radius: 6px;
+     border: 5px solid #ff76ff;
+     z-index: 100;
+     background-color: #ffc4ff;
+     position: absolute;
+     height: 30px;
+     width: 100px;
+     left: 1125px;
+     top: 427px;
+     cursor: pointer;
+}
+ #right2 {
+     border-radius: 6px;
+     border: 5px solid #ff76ff;
+     z-index: 100;
+     background-color: #ffc4ff;
+     position: absolute;
+     height: 30px;
+     width: 100px;
+     left: 1125px;
+     top: 427px;
+     cursor: pointer;
+}
+ #right3 {
+     border-radius: 6px;
+     border: 5px solid #ff76ff;
+     z-index: 100;
+     background-color: #ffc4ff;
+     position: absolute;
+     height: 30px;
+     width: 100px;
+     left: 1125px;
+     top: 427px;
+     cursor: pointer;
+}
+ #wrong1 {
+     border-radius: 6px;
+     border: 5px solid #ff76ff;
+     z-index: 100;
+     background-color: #ffc4ff;
+     position: absolute;
+     height: 30px;
+     width: 100px;
+     left: 1125px;
+     top: 460px;
+     cursor: pointer;
+}
+ #wrong2 {
+     border-radius: 6px;
+     border: 5px solid #ff76ff;
+     z-index: 100;
+     background-color: #ffc4ff;
+     position: absolute;
+     height: 30px;
+     width: 100px;
+     left: 1125px;
+     top: 460px;
+     cursor: pointer;
+}
+ #wrong3 {
+     border-radius: 6px;
+     border: 5px solid #ff76ff;
+     z-index: 100;
+     background-color: #ffc4ff;
+     position: absolute;
+     height: 30px;
+     width: 100px;
+     left: 1125px;
+     top: 460px;
+     cursor: pointer;
+}
+ #text1 {
+     border: 5px solid #ff76ff;
+     border-radius: 6px;
+     background-color: #ffc4ff;
+     height: 30px;
+     width: 300px;
+     z-index: 100;
+     position: absolute;
+     left: 924px;
+     top: 4px;
+}
+ .text1 {
+     position: relative;
+     margin-top: 8px;
+     margin-left: 10px;
+}
+ #text2 {
+     border: 5px solid #ff76ff;
+     border-radius: 6px;
+     background-color: #ffc4ff;
+     height: 30px;
+     width: 300px;
+     z-index: 100;
+     position: absolute;
+     left: 924px;
+     top: 46px;
+}
+ .text2 {
+     position: relative;
+     margin-top: 8px;
+     margin-left: 10px;
+}
+ #text3 {
+     border: 5px solid #ff76ff;
+     border-radius: 6px;
+     background-color: #ffc4ff;
+     height: 30px;
+     width: 300px;
+     z-index: 100;
+     position: absolute;
+     left: 924px;
+     top: 88px;
+}
+ .text3 {
+     position: relative;
+     margin-top: 8px;
+     margin-left: 10px;
+}
+ #text4 {
+     border: 5px solid #ff76ff;
+     border-radius: 6px;
+     background-color: #ffc4ff;
+     height: 30px;
+     width: 300px;
+     z-index: 100;
+     position: absolute;
+     left: 924px;
+     top: 130px;
+}
+ .text4 {
+     position: relative;
+     margin-top: 8px;
+     margin-left: 10px;
+}
+ #rp {
+     border: 5px solid #ff76ff;
+     border-radius: 6px;
+     background-color: #ffc4ff;
+     height: 30px;
+     width: 300px;
+     z-index: 100;
+     position: absolute;
+     left: 924px;
+     top: 171px;
+}
+ .rp {
+     position: relative;
+     margin-top: 8px;
+     margin-left: 10px;
+}
+ #text5 {
+     border: 5px solid #ff76ff;
+     border-radius: 6px;
+     background-color: #ffc4ff;
+     height: 30px;
+     width: 300px;
+     z-index: 100;
+     position: absolute;
+     left: 460px;
+     top: 560px;
+}
+ .text5 {
+     position: relative;
+     margin-top: 8px;
+     margin-left: 10px;
+     text-align: center;
+}
+ #monthday {
+     border: 5px solid #ff76ff;
+     border-radius: 6px;
+     background-color: #ffc4ff;
+     height: 30px;
+     width: 300px;
+     z-index: 100;
+     position: absolute;
+     left: 469px;
+     top: 4px;
+}
+ .monthday {
+     position: relative;
+     margin-top: 8px;
+     margin-left: 10px;
+     text-align: center;
+}
+ #buyItem1 {
+     border-radius: 500px;
+     z-index: 101;
+     background-color: #ff76ff;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 434px;
+     top: 190px;
+}
+ #Patty2 {
+     z-index: 105;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 0px;
+     top: 10px;
+ }
+ #buyItem2 {
+     border-radius: 500px;
+     z-index: 101;
+     background-color: #ff76ff;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 584px;
+     top: 190px;
+}
+ #Gundam2 {
+     z-index: 105;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 0px;
+     top: 0px;
+ }
+ #buyItem3 {
+     border-radius: 500px;
+     z-index: 101;
+     background-color: #ff76ff;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 734px;
+     top: 190px;
+}
+ #VideoGame2 {
+     z-index: 105;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 0px;
+     top: 0px;
+ }
+ #buyItem4 {
+     border-radius: 500px;
+     z-index: 101;
+     background-color: #ff76ff;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 434px;
+     top: 340px;
+}
+ #Manga2 {
+     z-index: 105;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 0px;
+     top: 0px;
+ }
+ #buyItem5 {
+     border-radius: 500px;
+     z-index: 101;
+     background-color: #ff76ff;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 584px;
+     top: 340px;
+}
+ #CardPack2 {
+     z-index: 105;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 0px;
+     top: 0px;
+ }
+ #buyItem6 {
+     border-radius: 500px;
+     z-index: 101;
+     background-color: #ff76ff;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 734px;
+     top: 340px;
+}
+ #Figure2 {
+     z-index: 105;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 0px;
+     top: 0px;
+ }
+ #buyItem7 {
+     border-radius: 500px;
+     z-index: 101;
+     background-color: #ff76ff;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 434px;
+     top: 265px;
+}
+ #Stick2 {
+     z-index: 105;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 0px;
+     top: -10px;
+ }
+ #buyItem8 {
+     border-radius: 500px;
+     z-index: 101;
+     background-color: #ff76ff;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 584px;
+     top: 265px;
+}
+ #FunkoSet2 {
+     z-index: 105;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 0px;
+     top: 0px;
+ }
+ #buyItem9 {
+     border-radius: 500px;
+     z-index: 101;
+     background-color: #ff76ff;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 734px;
+     top: 265px;
+}
+ #Chair2 {
+     z-index: 105;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 0px;
+     top: 0px;
+ }
+ #closeStore {
+     border-radius: 6px;
+     border: 5px solid #ff76ff;
+     z-index: 100;
+     background-color: #ffc4ff;
+     position: absolute;
+     height: 30px;
+     width: 100px;
+     left: 584px;
+     top: 480px;
+     cursor: pointer;
+}
+ #closeStore:hover {
+     transition: 0.5s;
+     box-shadow: 0 9px 9px rgba(0,0,0,0.16);
+}
+ #storeBG {
+     border: 5px solid #ff76ff;
+     border-radius: 6px;
+     background-color: #ffc4ff;
+     height: 320px;
+     width: 470px;
+     z-index: 100;
+     position: absolute;
+     left: 384px;
+     top: 140px;
+}
+ #storeBG2 {
+     border: 5px solid #ff76ff;
+     border-radius: 6px;
+     background-color: #ffc4ff;
+     height: 180px;
+     width: 470px;
+     z-index: 100;
+     position: absolute;
+     left: 384px;
+     top: 214px;
+}
+ #inv1 {
+     border-radius: 500px;
+     z-index: 101;
+     background-color: #ff76ff;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 434px;
+     top: 115px;
+}
+ #Patty {
+     z-index: 105;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 0px;
+     top: 10px;
+ }
+ #inv2 {
+     border-radius: 500px;
+     z-index: 101;
+     background-color: #ff76ff;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 584px;
+     top: 115px;
+}
+ #Gundam {
+     z-index: 105;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 0px;
+     top: 0px;
+ }
+ #inv3 {
+     border-radius: 500px;
+     z-index: 101;
+     background-color: #ff76ff;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 734px;
+     top: 115px;
+}
+ #VideoGame {
+     z-index: 105;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 0px;
+     top: 0px;
+ }
+ #inv4 {
+     border-radius: 500px;
+     z-index: 101;
+     background-color: #ff76ff;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 434px;
+     top: 265px;
+}
+ #Manga {
+     z-index: 105;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 0px;
+     top: 0px;
+ }
+ #inv5 {
+     border-radius: 500px;
+     z-index: 101;
+     background-color: #ff76ff;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 584px;
+     top: 265px;
+}
+ #CardPack {
+     z-index: 105;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 0px;
+     top: 0px;
+ }
+ #inv6 {
+     border-radius: 500px;
+     z-index: 101;
+     background-color: #ff76ff;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 734px;
+     top: 265px;
+}
+ #Figure {
+     z-index: 105;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 0px;
+     top: 0px;
+ }
+ #inv7 {
+     border-radius: 500px;
+     z-index: 101;
+     background-color: #ff76ff;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 434px;
+     top: 415px;
+}
+ #Stick {
+     z-index: 105;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 0px;
+     top: -10px;
+ }
+ #inv8 {
+     border-radius: 500px;
+     z-index: 101;
+     background-color: #ff76ff;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 584px;
+     top: 415px;
+}
+ #FunkoSet {
+     z-index: 105;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 0px;
+     top: 0px;
+ }
+ #inv9 {
+     border-radius: 500px;
+     z-index: 101;
+     background-color: #ff76ff;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 734px;
+     top: 415px;
+}
+ #Chair {
+     z-index: 105;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     left: 0px;
+     top: 0px;
+ }
+ #openInv {
+     border-radius: 6px;
+     border: 5px solid #ff76ff;
+     z-index: 100;
+     background-color: #ffc4ff;
+     position: absolute;
+     height: 30px;
+     width: 100px;
+     left: 13px;
+     top: 45px;
+     cursor: pointer;
+}
+ #closeInv {
+     border-radius: 6px;
+     border: 5px solid #ff76ff;
+     z-index: 100;
+     background-color: #ffc4ff;
+     position: absolute;
+     height: 30px;
+     width: 100px;
+     left: 13px;
+     top: 45px;
+     cursor: pointer;
+}
+ #andyShop {
+     border-radius: 6px;
+     border: 5px solid #ff76ff;
+     z-index: 100;
+     background-color: #ffc4ff;
+     position: absolute;
+     height: 30px;
+     width: 100px;
+     left: 13px;
+     top: 77px;
+     cursor: pointer;
+}
+ #andyClose {
+     border-radius: 6px;
+     border: 5px solid #ff76ff;
+     z-index: 100;
+     background-color: #ffc4ff;
+     position: absolute;
+     height: 30px;
+     width: 100px;
+     left: 13px;
+     top: 77px;
+     cursor: pointer;
+}
+ #invBG {
+     border: 5px solid #ff76ff;
+     border-radius: 6px;
+     background-color: #ffc4ff;
+     height: 460px;
+     width: 470px;
+     z-index: 100;
+     position: absolute;
+     left: 384px;
+     top: 65px;
+}
+ #tBox1 {
+     border: 5px solid #ff76ff;
+     border-radius: 6px;
+     background-color: #ffc4ff;
+     height: 100px;
+     width: 1201px;
+     z-index: 200;
+     position: absolute;
+     left: 14px;
+     top: 495px;
+}
+ .tBox1 {
+     position: relative;
+     margin-top: 8px;
+     margin-left: 10px;
+}
+ #tBox2 {
+     border: 5px solid #ff76ff;
+     border-radius: 6px;
+     background-color: #ffc4ff;
+     height: 100px;
+     width: 1201px;
+     z-index: 300;
+     position: absolute;
+     left: 14px;
+     top: 495px;
+}
+ .tBox2 {
+     position: relative;
+     margin-top: 8px;
+     margin-left: 10px;
+}
+ #tBox3 {
+     border: 5px solid #ff76ff;
+     border-radius: 6px;
+     background-color: #ffc4ff;
+     height: 100px;
+     width: 1201px;
+     z-index: 400;
+     position: absolute;
+     left: 14px;
+     top: 495px;
+}
+ .tBox3 {
+     position: relative;
+     margin-top: 8px;
+     margin-left: 10px;
+}
+ #tBox4 {
+     border: 5px solid #ff76ff;
+     border-radius: 6px;
+     background-color: #ffc4ff;
+     height: 100px;
+     width: 1201px;
+     z-index: 500;
+     position: absolute;
+     left: 14px;
+     top: 495px;
+}
+ .tBox4 {
+     position: relative;
+     margin-top: 8px;
+     margin-left: 10px;
+}
+ #tBox5 {
+     border: 5px solid #ff76ff;
+     border-radius: 6px;
+     background-color: #ffc4ff;
+     height: 100px;
+     width: 1201px;
+     z-index: 600;
+     position: absolute;
+     left: 14px;
+     top: 495px;
+}
+ .tBox5 {
+     position: relative;
+     margin-top: 8px;
+     margin-left: 10px;
+}
+ #tBox6 {
+     border: 5px solid #ff76ff;
+     border-radius: 6px;
+     background-color: #ffc4ff;
+     height: 100px;
+     width: 1201px;
+     z-index: 700;
+     position: absolute;
+     left: 14px;
+     top: 495px;
+}
+ .tBox6 {
+     position: relative;
+     margin-top: 8px;
+     margin-left: 10px;
+}
+ #tBox7 {
+     border: 5px solid #ff76ff;
+     border-radius: 6px;
+     background-color: #ffc4ff;
+     height: 100px;
+     width: 1201px;
+     z-index: 800;
+     position: absolute;
+     left: 14px;
+     top: 495px;
+}
+ .tBox7 {
+     position: relative;
+     margin-top: 8px;
+     margin-left: 10px;
+}
+ #input {
+     border: 5px solid #ff76ff;
+     border-radius: 6px;
+     background-color: #ffc4ff;
+     height: 120px;
+     width: 240px;
+     z-index: 400;
+     position: absolute;
+     left: 499px;
+     top: 240px;
+}
+ .inputText {
+     position: relative;
+     margin-top: 8px;
+     text-align: center;
+}
+ #inputSubmit {
+     border-radius: 6px;
+     border: 5px solid #ff76ff;
+     z-index: 90;
+     background-color: #ffc4ff;
+     position: relative;
+     height: 30px;
+     width: 60px;
+     left: 89px;
+     top: 0px;
+     cursor: pointer;
+}
+ #inputField {
+     position: relative;
+     left: 72px 
+}
+ #monster {
+     height: 450px;
+     width: 549px;
+     z-index: 50;
+     position: fixed;
+     top: 159;
+     left: 336;
+}
+ 

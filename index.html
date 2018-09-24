@@ -1,0 +1,238 @@
+<html>
+  <head>
+    <!--This loads our CSS-->
+    <link rel="stylesheet" href="school.css">
+    <!--These create audio files for the program to use. It looks for a source, certain filetype, and some failsafe text in case it can't load.-->
+    <!--A lot of these go unused because we didn't have time to find them.-->
+    <audio id="music1">
+      <source src="daijoubu.ogg" type="audio/ogg">
+      Your browser doesn't support HTML5 audio, sorry!
+    </audio>
+    <audio id="music2">
+      <source src="park.ogg" type="audio/ogg">
+      Your browser doesn't support HTML5 audio, sorry!
+    </audio>
+    <audio id="music3">
+      <source src="ootshop.ogg" type="audio/ogg">
+      Your browser doesn't support HTML5 audio, sorry!
+    </audio>
+    <audio id="music4">
+      <source src="monster.ogg" type="audio/ogg">
+      Your browser doesn't support HTML5 audio, sorry!
+    </audio>
+    <audio id="music5">
+      <source src="chili.ogg" type="audio/ogg">
+      Your browser doesn't support HTML5 audio, sorry!
+    </audio>
+    <audio id="music6">
+      <source src="train.ogg" type="audio/ogg">
+      Your browser doesn't support HTML5 audio, sorry!
+    </audio>
+    <audio id="music7">
+      <source src="donald.ogg" type="audio/ogg">
+      Your browser doesn't support HTML5 audio, sorry!
+    </audio>
+    <audio id="music8">
+      <source src="worstend.ogg" type="audio/ogg">
+      Your browser doesn't support HTML5 audio, sorry!
+    </audio>
+    <audio id="music9">
+      <source src="badend.ogg" type="audio/ogg">
+      Your browser doesn't support HTML5 audio, sorry!
+    </audio>
+    <audio id="music10">
+      <source src="goodend.ogg" type="audio/ogg">
+      Your browser doesn't support HTML5 audio, sorry!
+    </audio>
+    <audio id="music11">
+      <source src="bestend.ogg" type="audio/ogg">
+      Your browser doesn't support HTML5 audio, sorry!
+    </audio>
+    <audio id="music12">
+      <source src="secretend.ogg" type="audio/ogg">
+      Your browser doesn't support HTML5 audio, sorry!
+    </audio>
+    <audio id="music13">
+      <source src="heartbeat.ogg" type="audio/ogg">
+      Your browser doesn't support HTML5 audio, sorry!
+    </audio>
+    <!--This looks for the .js file and loads it as its script.-->
+    <script src="school.js"> 
+    </script>
+  </head>
+  <!--Loads these files when the webpage finishes loading.-->
+  <body onload="gabrielCheck(); opener();">
+    <!--Whole lotta blanks. So what these are for are to create the current onscreen dialogue box gets hidden then you see the other ones beneath it.<!-->
+    <img id="blank1" src="blank.png" style="display:none;" onClick="textMover(1);">
+    <img id="blank2" src="blank.png" style="display:none;" onClick="textMover(2);">
+    <img id="blank3" src="blank.png" style="display:none;" onClick="textMover(3);">
+    <img id="blank4" src="blank.png" style="display:none;" onClick="textMover(4);">
+    <img id="blank5" src="blank.png" style="display:none;" onClick="textMover(5);">
+    <img id="blank6" src="blank.png" style="display:none;" onClick="textMover(6);">
+    <img id="blank7" src="blank.png" style="display:none;" onClick="textMover(7);">
+    <img id="blankMover1" src="blank.png" style="display:none;" onClick="endings(1);">
+    <img id="blankMover2" src="blank.png" style="display:none;" onClick="endings(2);">
+    <img id="blankMover3" src="blank.png" style="display:none;" onClick="endings(3);">
+    <img id="blankMover4" src="blank.png" style="display:none;" onClick="endings(4);">
+    <img id="blankMover6" src="blank.png" style="display:none;" onClick="disappear();">
+    <img id="gabbomain" src="gabboarms.png" style="display:none;">
+    <img id="black" src="blank.png" style="display:none;" onClick="plotMover();">
+    <img id="monster" src="monster.png" style="display:none;" onClick="">
+    <img id="school" src="school.jpg">
+    <!--mouseOver and mouseLeave make little text boxes that describe what you're pointing at at the bottom of the screen. display:none makes it so that these elements are invisible when the game is loaded.-->
+    <img id="wildGabriel" src="gabbotpose.png" onClick="giveOptions()" style="display:none;" onmouseover="mouseOver('Talk to Gabriel');" onmouseout="mouseLeave();">
+    <input type="button" id="schoolFlex" onClick="trainSTR();" onmouseover="mouseOver('Work Out (+STR)');" onmouseout="mouseLeave();">
+    <input type="button" id="schoolGrind" onClick="trainINT();" onmouseover="mouseOver('Study (+INT)');" onmouseout="mouseLeave();">
+    <input type="button" id="mapHome" onClick="goHome();" style="display:none;" onmouseover="mouseOver('Go Home');" onmouseout="mouseLeave();">
+    <input type="button" id="mapSchool" onClick="goSchool();" style="display:none;" onmouseover="mouseOver('Go to School');" onmouseout="mouseLeave();">
+    <input type="button" id="mapPark" onClick="goPark();" style="display:none;" onmouseover="mouseOver('Go to Monarch Park');" onmouseout="mouseLeave();">
+    <input type="button" id="mapWork" onClick="goDonald();" style="display:none;" onmouseover="mouseOver('Go to Work');" onmouseout="mouseLeave();">
+    <!--I have no personal opinions on the President.-->
+    <input type="button" id="mapStore" onClick="goStore();" style="display:none;" onmouseover="mouseOver('Go to the Store');" onmouseout="mouseLeave();">
+    <input type="button" id="openStore" onClick="openStore();" style="display:none;" onmouseover="mouseOver('Buy Items');" onmouseout="mouseLeave();">
+    <input type="button" id="work" onClick="workConfirm();" style="display:none;" onmouseover="mouseOver('Work (+$)');" onmouseout="mouseLeave();">
+    <!--Options when you speak to Gabriel.-->
+    <input type="button" id="converse" value="Chat" onClick="goChat();" style="display:none;">
+    <input type="button" id="date" value="Date" onClick="goDate();" style="display:none;">
+    <input type="button" id="leave" value="Leave" onClick="leaveGab();" style="display:none;">
+    <input type="button" id="wait" onClick="goWait()" style="display:none;">
+    <input type="button" id="monsterRun" value="RUN" onClick="running();" style="display:none;">
+    <input type="button" id="right1" value="I like them!" onClick="right();" style="display:none;">
+    <input type="button" id="wrong1" value="Ew." onClick="wrong();" style="display:none;">
+    <input type="button" id="right2" value="It's my fave!" onClick="right();" style="display:none;">
+    <input type="button" id="wrong2" value="I don't game." onClick="wrong();" style="display:none;">
+    <input type="button" id="right3" value="Y-yeah..." onClick="right();" style="display:none;">
+    <input type="button" id="wrong3" value="I'm not 7." onClick="wrong();" style="display:none;">
+    <input type="button" id="closeStore" value="Close Store" onClick="closeStore();" style="display:none;">
+    <input type="button" id="openMap" value="Open Map" onClick="openMap();">
+    <input type="button" id="openInv" value="Items" onClick="openInv();">
+    <input type="button" id="closeInv" value="Close" onClick="closeInv();" style="display:none;">
+    <input type="button" id="andyShop" value="Talk to Andy" onClick="andyShop();" style="display:none;">
+    <input type="button" id="andyClose" value="Leave" onClick="closeAndy();" style="display:none;">
+    <!--Divs for all the onscreen elements like buttons, shop UIs, and the data in the upper right.-->
+    <div id="text1">
+      <p class="text1" id="time">TIME 03:00
+      </p>
+    </div>
+    <div id="text2">
+      <p class="text2" id="str">STR 0
+      </p>
+    </div>
+    <div id="text3">
+      <p class="text3" id="int">INT 0
+      </p>
+    </div>
+    <div id="text4">
+      <p class="text4" id="money">MONEY $0
+      </p>
+    </div>
+    <div id="rp">
+      <p class="rp" id="rptext">RELATIONSHIP POINTS 0
+      </p>
+    </div>
+    <div id="text5" style="display:none;">
+      <p class="text5" id="preview">
+      </p>
+    </div>
+    <div id="monthday">
+      <p class="monthday" id="monthDayText">May 22nd, Tuesday, 2018
+      </p>
+    </div>
+    <!--Shop UI stuff.-->
+    <div id="buyItem1" onClick="buyItem(1);" style="display:none;" onmouseover="mouseOver('Patty ($2)');" onmouseout="mouseLeave();">
+      <img id="Patty2" src="patty.png" style="display:none;">
+    </div>
+    <div id="buyItem2" onClick="buyItem(2);" style="display:none;" onmouseover="mouseOver('Gundam ($40)');" onmouseout="mouseLeave();">
+      <img id="Gundam2" src="gundam.png" style="display:none;">
+    </div>
+    <div id="buyItem3" onClick="buyItem(3);" style="display:none;" onmouseover="mouseOver('Video Game ($30)');" onmouseout="mouseLeave();">
+      <img id="VideoGame2" src="game.png" style="display:none;">
+    </div>
+    <div id="buyItem4" onClick="buyItem(4);" style="display:none;" onmouseover="mouseOver('Manga ($15)');" onmouseout="mouseLeave();">
+      <img id="Manga2" src="manga.png" style="display:none;">
+    </div>
+    <div id="buyItem5" onClick="buyItem(5);" style="display:none;" onmouseover="mouseOver('Card Pack ($6)');" onmouseout="mouseLeave();">
+      <img id="CardPack2" src="pack.png" style="display:none;">
+    </div>
+    <div id="buyItem6" onClick="buyItem(6);" style="display:none;" onmouseover="mouseOver('Collectible Vinyl Figurine ($20)');" onmouseout="mouseLeave();">
+      <img id="Figure2" src="funko.png" style="display:none;">
+    </div>
+    <div id="buyItem7" onClick="buyItem(7);" style="display:none;" onmouseover="mouseOver('Fight Stick ($50 + 2 Patties)');" onmouseout="mouseLeave();">
+      <img id="Stick2" src="stick.png" style="display:none;">
+    </div>
+    <div id="buyItem8" onClick="buyItem(8);" style="display:none;" onmouseover="mouseOver('Vinyl Figure Set ($50 + 3 Patties)');" onmouseout="mouseLeave();">
+      <img id="FunkoSet2" src="funkoset.png" style="display:none;">
+    </div>
+    <div id="buyItem9" onClick="buyItem(9);" style="display:none;" onmouseover="mouseOver('Ikea Markus Swivel Chair ($169 + 5 Patties)');" onmouseout="mouseLeave();">
+      <img id="Chair2" src="chair.png" style="display:none;">
+    </div>
+    <div id="storeBG" style="display:none;">
+    </div>
+    </div>
+  <div id="storeBG2" style="display:none;">
+  </div>
+  <!--Inventory UI stuff.-->
+  <div id="inv1" onClick="invCheck(1);" style="display:none;" onmouseover="mouseOver('Patty');" onmouseout="mouseLeave();">
+    <img id="Patty" src="patty.png" style="display:none;">
+  </div>
+  <div id="inv2" onClick="invCheck(2);" style="display:none;" onmouseover="mouseOver('Gundam');" onmouseout="mouseLeave();">
+    <img id="Gundam" src="gundam.png" style="display:none;">
+  </div>
+  <div id="inv3" onClick="invCheck(3);" style="display:none;" onmouseover="mouseOver('Video Game');" onmouseout="mouseLeave();">
+    <img id="VideoGame" src="game.png" style="display:none;">
+  </div>
+  <div id="inv4" onClick="invCheck(4);" style="display:none;" onmouseover="mouseOver('Manga');" onmouseout="mouseLeave();">
+    <img id="Manga" src="manga.png" style="display:none;">
+  </div>
+  <div id="inv5" onClick="invCheck(5);" style="display:none;" onmouseover="mouseOver('Card Pack');" onmouseout="mouseLeave();">
+    <img id="CardPack" src="pack.png" style="display:none;">
+  </div>
+  <div id="inv6" onClick="invCheck(6);" style="display:none;" onmouseover="mouseOver('Collectible Vinyl Figurine');" onmouseout="mouseLeave();">
+    <img id="Figure" src="funko.png" style="display:none;">
+  </div>
+  <div id="inv7" onClick="invCheck(7);" style="display:none;" onmouseover="mouseOver('Fight Stick');" onmouseout="mouseLeave();">
+    <img id="Stick" src="stick.png" style="display:none;">
+  </div>
+  <div id="inv8" onClick="invCheck(8);" style="display:none;" onmouseover="mouseOver('Set of Collectible Vinyls');" onmouseout="mouseLeave();">
+    <img id="FunkoSet" src="funkoset.png" style="display:none;">
+  </div>
+  <div id="inv9" onClick="invCheck(9);" style="display:none;" onmouseover="mouseOver('Ikea Markus Swivel Chair');" onmouseout="mouseLeave();">
+    <img id="Chair" src="chair.png" style="display:none;">
+  </div>
+  <div id="invBG" style="display:none;">
+  </div>
+  <!--Dialogue boxes.-->
+  <div id="tBox1" style="display:none;">
+    <p class="tBox1" id="tBoxText1">
+    </p>
+  </div>
+  <div id="tBox2" style="display:none;">
+    <p class="tBox2" id="tBoxText2">
+    </p>
+  </div>
+  <div id="tBox3" style="display:none;">
+    <p class="tBox3" id="tBoxText3">
+    </p>
+  </div>
+  </div>
+<div id="tBox4" style="display:none;">
+  <p class="tBox4" id="tBoxText4">
+  </p>
+</div>
+</div>
+<div id="tBox5" style="display:none;">
+  <p class="tBox5" id="tBoxText5">
+  </p>
+</div>
+</div>
+<div id="tBox6" style="display:none;">
+  <p class="tBox6" id="tBoxText6">
+  </p>
+</div>
+</div>
+<div id="tBox7" style="display:none;">
+  <p class="tBox7" id="tBoxText7">
+  </p>
+</div>
+</body>
+</html>
